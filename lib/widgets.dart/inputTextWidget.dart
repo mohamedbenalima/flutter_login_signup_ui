@@ -4,13 +4,12 @@ class InputTextWidget extends StatelessWidget {
   final String labelText;
   final IconData icon;
   final bool obscureText;
-  //final controller;
+
   const InputTextWidget({
     Key? key,
     required this.labelText,
     required this.icon,
     required this.obscureText,
-    // @required this.controller
   }) : super(key: key);
 
   @override

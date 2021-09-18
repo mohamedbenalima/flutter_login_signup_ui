@@ -22,8 +22,8 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     //final screeHeight = MediaQuery.of(context).size.height;
-    final TextEditingController _emailController = TextEditingController();
-    final TextEditingController _passwordController = TextEditingController();
+    // final TextEditingController _emailController = TextEditingController();
+    // final TextEditingController _passwordController = TextEditingController();
 
     final double containerHeight = 420.0;
     return Container(
@@ -175,48 +175,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             SizedBox(
                               height: 20.0,
                             ),
-                            // Container(
-                            //   height: 55.0,
-                            //   child: ElevatedButton(
-                            //     onPressed: () {
-                            //       print("hello sign up");
-                            //     },
-                            //     style: ElevatedButton.styleFrom(
-                            //       primary: Colors.white,
-                            //       elevation: 0.0,
-                            //       minimumSize: Size(screenWidth, 150),
-                            //       padding: EdgeInsets.symmetric(horizontal: 16),
-                            //       shape: const RoundedRectangleBorder(
-                            //         borderRadius:
-                            //             BorderRadius.all(Radius.circular(0)),
-                            //       ),
-                            //     ),
-                            //     child: Ink(
-                            //       decoration: BoxDecoration(
-                            //           boxShadow: <BoxShadow>[
-                            //             BoxShadow(
-                            //                 color: Color(0xfff49738),
-                            //                 offset: const Offset(1.1, 1.1),
-                            //                 blurRadius: 10.0),
-                            //           ],
-                            //           color: Color(0xfff49738),
-                            //           borderRadius: BorderRadius.circular(5.0)),
-                            //       child: Container(
-                            //         alignment: Alignment.center,
-                            //         child: Text(
-                            //           "Sign In",
-                            //           textAlign: TextAlign.center,
-                            //           style: TextStyle(
-                            //               color: Colors.white, fontSize: 25),
-                            //         ),
-                            //       ),
-                            //     ),
-                            //   ),
-                            // ),;
                             GradientButtonWidget(
-                                title: "Sign In",
-                                controllerEmail: _emailController.text,
-                                controllerPwd: _passwordController.text),
+                              title: "Sign In",
+                            ),
                             Padding(
                               padding:
                                   const EdgeInsets.only(left: 15.0, top: 3.0),

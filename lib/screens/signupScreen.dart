@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:loginapp/widgets.dart/gradiantButtonWidget.dart';
 
 import 'package:loginapp/widgets.dart/inputTextWidget.dart';
 
@@ -24,8 +25,10 @@ class _LoginScreenState extends State<SignUpScreen> {
     //final screeHeight = MediaQuery.of(context).size.height;
     // final TextEditingController _emailController = TextEditingController();
     // final TextEditingController _passwordController = TextEditingController();
+    // final TextEditingController _confirmPasswordController =
+    //     TextEditingController();
 
-    final double containerHeight = 480.0;
+    final double containerHeight = 490.0;
     return Container(
       child: Scaffold(
         extendBodyBehindAppBar: true,
@@ -199,43 +202,8 @@ class _LoginScreenState extends State<SignUpScreen> {
                             SizedBox(
                               height: 20.0,
                             ),
-                            Container(
-                              height: 55.0,
-                              child: ElevatedButton(
-                                onPressed: () {
-                                  print("hello sign up");
-                                },
-                                style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
-                                  elevation: 0.0,
-                                  minimumSize: Size(screenWidth, 150),
-                                  padding: EdgeInsets.symmetric(horizontal: 16),
-                                  shape: const RoundedRectangleBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(0)),
-                                  ),
-                                ),
-                                child: Ink(
-                                  decoration: BoxDecoration(
-                                      boxShadow: <BoxShadow>[
-                                        BoxShadow(
-                                            color: Color(0xfff49738),
-                                            offset: const Offset(1.1, 1.1),
-                                            blurRadius: 10.0),
-                                      ],
-                                      color: Color(0xfff49738),
-                                      borderRadius: BorderRadius.circular(5.0)),
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    child: Text(
-                                      "Sign Up",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          color: Colors.white, fontSize: 25),
-                                    ),
-                                  ),
-                                ),
-                              ),
+                            GradientButtonWidget(
+                              title: "Sign Up",
                             ),
                             Padding(
                               padding:
