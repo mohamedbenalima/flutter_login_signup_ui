@@ -8,6 +8,8 @@ Happy coding ^^
 
 ![Capture](https://user-images.githubusercontent.com/40917856/133892358-29a6c13c-80a9-408b-bed3-6d6342d294a8.PNG)
 
+### Promotion video: [click here](https://youtu.be/Zyxz4T6jRyM)
+
 
 
 
